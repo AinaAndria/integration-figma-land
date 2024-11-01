@@ -4,6 +4,7 @@
   font-family: "Graphik";
   src: url("@/assets/fonts/GraphikRegular.otf")  format("opentype");
 }
+
 @font-face {
   font-family: "Graphik";
   src: url("@/assets/fonts/GraphikBold.otf")  format("opentype");
@@ -113,6 +114,7 @@ h2 {
   font-size: 48px;
   line-height: 55px;
   letter-spacing: 0.2px;
+  font-weight: normal;
 }
 
 h3 {
@@ -126,6 +128,7 @@ h4 {
   font-size: 28px;
   line-height: 40px;
   letter-spacing: 0.2px;
+  font-weight: normal;
 }
 
 h5 {
@@ -133,4 +136,15 @@ h5 {
   line-height: 23px;
   letter-spacing: 0.1px;
   font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  font-weight: normal;
+}
+
+h1,h2,h3,h4,h5,p {
+  color: var(--color-text);
 }

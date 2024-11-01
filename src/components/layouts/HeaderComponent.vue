@@ -134,6 +134,7 @@
     }
 
     h2 {
+      color: var(--color-text-light);
       @include media-breakpoint-up(md) {
         font-size: 74px;
         line-height: 84px;
@@ -143,6 +144,7 @@
     }
 
     h4 {
+      color: var(--color-text-light);
       span {
         display: none;
 
