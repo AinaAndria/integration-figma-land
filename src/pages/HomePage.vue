@@ -11,8 +11,8 @@ import TrialComponent from '@/components/layouts/TrialComponent.vue';
 </script>
 
 <template>
-  <main class="main">
-    <HeaderComponent />
+  <HeaderComponent />
+  <main class="main container">
     <FeatureComponent />
     <TrialComponent />
     <SubscribeComponent />
@@ -26,15 +26,4 @@ import TrialComponent from '@/components/layouts/TrialComponent.vue';
 
 <style scoped lang="scss">
 @import '@/assets/breakpoints.scss';
-.main {
-  padding: 0 10px;
-
-  @include media-breakpoint-up(md) {
-    padding: 0 100px;
-  }
-
-  @include media-breakpoint-up(lg) {
-    padding: 0 200px;
-  }
-}
 </style>

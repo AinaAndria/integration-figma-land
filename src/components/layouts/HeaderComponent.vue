@@ -21,14 +21,14 @@
             <a href="#contact">Contact</a>
           </li>
         </ul>
-        <img class="logo" src="/src/assets/images/society_logo.png" alt="logo" />
+        <img class="logo" src="@/assets/images/society_logo.png" alt="logo" />
       </div>
 
       <div class="navbar-end">
         <ul class="logo-list">
           <li>
             <a href="#" target="_blank">
-              <img src="@/assets/images/twitter.svg" alt="twitter" />
+              <img src="@/assets/images/twitter.svg" alt="facebook" />
             </a>
           </li>
           <li>
@@ -38,16 +38,19 @@
           </li>
           <li>
             <a href="#" target="_blank">
-              <img src="@/assets/images/linkedin.svg" alt="linkedin" />
+              <img src="@/assets/images/linkedin.svg" alt="facebook" />
             </a>
           </li>
         </ul>
+        <div class="menu">
+          <img src="@/assets/images/menu.svg" alt="facebook" />
+        </div>
       </div>
     </div>
 
     <div class="header-welcome">
-      <h1>The best products<br />start with Figma</h1>
-      <h4>Most calendars are designed for teams. Slate is designed for freelancers</h4>
+      <h2>The best products start with Figma</h2>
+      <h4>Most calendars are designed for teams. <span>Slate is designed for freelancers</span></h4>
     </div>
 
     <div class="header-action-button">
@@ -77,18 +80,38 @@
       align-items: center;
 
       .link-list {
-        display: flex;
+        display: none;
         gap: 1.5rem;
+
+        @include media-breakpoint-up(lg) {
+          display: flex;
+        }
 
         a {
           color: var(--color-text-light);
         }
       }
     }
+
     .navbar-end {
       .logo-list {
-        display: flex;
+        display: none;
         gap: 1.5rem;
+
+        @include media-breakpoint-up(lg) {
+          display: flex;
+        }
+
+        img {
+          cursor: pointer;
+        }
+      }
+
+      .menu {
+        display: block;
+        @include media-breakpoint-up(lg) {
+          display: none;
+        }
 
         img {
           cursor: pointer;
@@ -98,9 +121,36 @@
   }
 
   .header-welcome {
-    margin-top: 4rem;
     text-align: center;
-    padding: 0 11rem;
+    padding: 0 1rem;
+    margin-top: 8rem;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 2rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding: 0 8rem;
+    }
+
+    h2 {
+      @include media-breakpoint-up(md) {
+        font-size: 74px;
+        line-height: 84px;
+        letter-spacing: 0.2px;
+        font-weight: bold;
+      }
+    }
+
+    h4 {
+      span {
+        display: none;
+
+        @include media-breakpoint-up(md) {
+          display: inline;
+        }
+      }
+    }
   }
 
   .header-action-button {
