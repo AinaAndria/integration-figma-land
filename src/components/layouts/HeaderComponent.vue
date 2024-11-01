@@ -1,8 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="header-container container" id="home">
-    <div class="navbar">
+  <section class="header-container container" id="home">
+    <nav class="navbar">
       <div class="navbar-start">
         <ul class="link-list">
           <li>
@@ -28,7 +28,7 @@
         <ul class="logo-list">
           <li>
             <a href="#" target="_blank">
-              <img src="@/assets/images/icons/twitter.svg" alt="facebook" />
+              <img src="@/assets/images/icons/twitter.svg" alt="twitter" />
             </a>
           </li>
           <li>
@@ -38,15 +38,15 @@
           </li>
           <li>
             <a href="#" target="_blank">
-              <img src="@/assets/images/icons/linkedin.svg" alt="facebook" />
+              <img src="@/assets/images/icons/linkedin.svg" alt="linkedin" />
             </a>
           </li>
         </ul>
         <div class="menu">
-          <img src="@/assets/images/icons/menu.svg" alt="facebook" />
+          <img src="@/assets/images/icons/menu.svg" alt="menu" />
         </div>
       </div>
-    </div>
+    </nav>
 
     <div class="header-welcome">
       <h2>The best products start with Figma</h2>
@@ -56,7 +56,7 @@
     <div class="header-action-button">
       <button type="button">Try For Free</button>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped lang="scss">
