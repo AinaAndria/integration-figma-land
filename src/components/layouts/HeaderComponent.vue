@@ -12,7 +12,7 @@
             <a href="#feature">Product</a>
           </li>
           <li>
-            <a href="#trial">Pricing</a>
+            <a href="#pricing">Pricing</a>
           </li>
           <li>
             <a href="#subscribe">About</a>

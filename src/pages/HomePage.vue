@@ -11,15 +11,19 @@ import TrialComponent from '@/components/layouts/TrialComponent.vue';
 </script>
 
 <template>
-  <HeaderComponent />
-  <main class="main container">
-    <FeatureComponent />
-    <TrialComponent />
-    <SubscribeComponent />
-    <PartnerComponent />
-    <TestimonialComponent />
+  <main class="main">
+    <HeaderComponent />
+    <div class="container">
+      <FeatureComponent />
+      <TrialComponent />
+      <SubscribeComponent />
+      <PartnerComponent />
+      <TestimonialComponent />
+    </div>
     <PricingComponent />
-    <ContactComponent />
+    <div class="container">
+      <ContactComponent />
+    </div>
     <FooterComponent />
   </main>
 </template>
