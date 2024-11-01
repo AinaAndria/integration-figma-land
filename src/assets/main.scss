@@ -1,9 +1,24 @@
+@import '@/assets/breakpoints.scss';
+
 :root {
   --color-primary: #2091f9;
-  --light-text: #ffffff;
+  --color-secondary: #2dc071;
+  --color-tertiary: #f15b07;
+  --color-text: #252b42;
+  --color-text-secondary: #374754;
+  --color-text-light: #ffffff;
+  --color-background-dark: #252b42;
+  --color-background-light: #ffffff;
+  --color-background-gradient: #222b32;
 }
 
 @media (prefers-color-scheme: dark) {
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -24,15 +39,19 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
 }
 
 button {
   background-color: var(--color-primary);
-  color: var(--light-text);
+  color: var(--color-text-light);
   padding: 18px 38px;
   border-radius: 35px;
   border: none;
   cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
 
   &:hover {
     box-shadow: 0px 0px 2px var(--color-primary);
@@ -43,8 +62,64 @@ button {
   }
 
   &.white {
-    background-color: var(--light-text);
+    background-color: var(--color-text-light);
     color: var(--color-primary);
     border: 1px solid var(--color-primary);
   }
+}
+
+.container {
+  padding: 0 10px;
+
+  @include media-breakpoint-up(md) {
+    padding: 0 100px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 200px;
+  }
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 74px;
+  line-height: 84px;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: 0.2px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.1px;
+  font-weight: bold;
 }
