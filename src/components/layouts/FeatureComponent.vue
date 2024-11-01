@@ -13,17 +13,17 @@
     </div>
     <div class="feature-items">
       <div class="feature-item">
-        <img src="@/assets/images/drawing.svg" alt="drawing" />
+        <img src="@/assets/images/icons/drawing.svg" alt="drawing" />
         <h3>OpenType features Variable fonts</h3>
         <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
       </div>
       <div class="feature-item">
-        <img src="@/assets/images/paint.svg" alt="paint" />
+        <img src="@/assets/images/icons/paint.svg" alt="paint" />
         <h3>Design with real data</h3>
         <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
       </div>
       <div class="feature-item">
-        <img src="@/assets/images/brush.svg" alt="brush" />
+        <img src="@/assets/images/icons/brush.svg" alt="brush" />
         <h3>Fastest way to take action</h3>
         <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
       </div>

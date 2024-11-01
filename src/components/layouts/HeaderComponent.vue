@@ -21,29 +21,29 @@
             <a href="#contact">Contact</a>
           </li>
         </ul>
-        <img class="logo" src="@/assets/images/society_logo.png" alt="logo" />
+        <img class="logo" src="@/assets/images/logo/company.png" alt="logo" />
       </div>
 
       <div class="navbar-end">
         <ul class="logo-list">
           <li>
             <a href="#" target="_blank">
-              <img src="@/assets/images/twitter.svg" alt="facebook" />
+              <img src="@/assets/images/icons/twitter.svg" alt="facebook" />
             </a>
           </li>
           <li>
             <a href="#" target="_blank">
-              <img src="@/assets/images/facebook.svg" alt="facebook" />
+              <img src="@/assets/images/icons/facebook.svg" alt="facebook" />
             </a>
           </li>
           <li>
             <a href="#" target="_blank">
-              <img src="@/assets/images/linkedin.svg" alt="facebook" />
+              <img src="@/assets/images/icons/linkedin.svg" alt="facebook" />
             </a>
           </li>
         </ul>
         <div class="menu">
-          <img src="@/assets/images/menu.svg" alt="facebook" />
+          <img src="@/assets/images/icons/menu.svg" alt="facebook" />
         </div>
       </div>
     </div>
