@@ -4,7 +4,9 @@
   <div class="feature-container" id="feature">
     <div class="feature-header">
       <h2>Features</h2>
-      <h4>Most calendars are designed for teams.<br/><span>Slate is designed for freelancers</span></h4>
+      <h4>
+        Most calendars are designed for teams.<br /><span>Slate is designed for freelancers</span>
+      </h4>
     </div>
     <div class="feature-image">
       <img class="mobile" src="@/assets/images/video_image_mobile.png" alt="video-image-mobile" />
@@ -73,6 +75,11 @@
 
   .feature-image {
     margin-top: 2rem;
+
+    img {
+      width: 100%;
+      cursor: pointer;
+    }
 
     .mobile {
       @include media-breakpoint-up(lg) {

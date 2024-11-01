@@ -1,12 +1,12 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="header-container container">
+  <div class="header-container container" id="home">
     <div class="navbar">
       <div class="navbar-start">
         <ul class="link-list">
           <li>
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
             <a href="#feature">Product</a>
