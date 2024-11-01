@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="subscribe-container">
+  <div class="subscribe-container" id="subscribe">
     <div class="subscribe-start">
       <img src="@/assets/images/newletter.png" alt="newletter" />
     </div>

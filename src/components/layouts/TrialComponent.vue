@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="trial-container">
+  <div class="trial-container" id="trial">
     <div class="trial-start">
       <div>
         <h2>Fastest way to organize</h2>
