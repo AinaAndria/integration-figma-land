@@ -73,6 +73,7 @@
 .header-container {
   height: 100vh;
   height: 100svh;
+  min-height: 800px;
   background-image: url('@/assets/images/header_background.png');
   background-position: center bottom;
   background-repeat: no-repeat;
