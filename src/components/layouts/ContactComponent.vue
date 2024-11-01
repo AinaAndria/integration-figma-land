@@ -58,8 +58,9 @@
 
 <style scoped lang="scss">
 @import '@/assets/breakpoints.scss';
-
 .contact-container {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   .contact-header {
     text-align: center;
 
@@ -146,10 +147,13 @@
           display: flex;
           align-items: center;
           gap: 1rem;
+          margin-bottom: 12px;
+
           h6 {
             margin: 0;
-            margin-top: 12px;
-            height: 35px;
+            @include media-breakpoint-up(md) {
+              margin-top: 12px;
+            }
           }
 
           @include media-breakpoint-up(md) {

@@ -42,8 +42,17 @@
             </a>
           </li>
         </ul>
-        <div class="menu">
-          <img src="@/assets/images/icons/menu.svg" alt="menu" />
+        <div class="dropdown">
+          <div class="dropbtn">
+            <img src="@/assets/images/icons/menu.svg" alt="menu" />
+          </div>
+          <div class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#feature">Product</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#subscribe">About</a>
+            <a href="#contact">Contact</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -63,6 +72,7 @@
 @import '@/assets/breakpoints.scss';
 .header-container {
   height: 100vh;
+  height: 100svh;
   background-image: url('@/assets/images/header_background.png');
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -107,7 +117,7 @@
         }
       }
 
-      .menu {
+      .dropbtn {
         display: block;
         @include media-breakpoint-up(lg) {
           display: none;
@@ -115,6 +125,33 @@
 
         img {
           cursor: pointer;
+        }
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+
+        &:hover {
+          .dropdown-content {
+            display: block;
+          }
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          right: 0;
+          background-color: #33333399;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+
+          a {
+            color: var(--color-text-light);
+            padding: 12px 16px;
+            display: block;
+          }
         }
       }
     }
